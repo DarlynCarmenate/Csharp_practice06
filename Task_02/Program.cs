@@ -10,10 +10,10 @@ int Prompt(string message)
 	return value;
 }
 
-int b1 = Prompt("Введите значение b1: ");
-int b2 = Prompt("Введите значение b2: ");
-int k1 = Prompt("Введите значение k1: ");
-int k2 = Prompt("Введите значение k2: ");
+double b1 = Prompt("Введите значение b1: ");
+double b2 = Prompt("Введите значение b2: ");
+double k1 = Prompt("Введите значение k1: ");
+double k2 = Prompt("Введите значение k2: ");
 
 if(k1 == k2 && b1 == b2)
 Console.WriteLine("Бесконечное пересечение");
@@ -23,7 +23,7 @@ Console.WriteLine("Нет пересечений");
 
 else
 {
-int x = (b2 - b1)/(k1 - k2);
-int y = k1 * x + b1;
+double x = (b2 - b1)/(k1 - k2);
+double y = k1 * x + b1;
 Console.WriteLine($"Точка пересечения двух прямых {x}, {y}");
 }
